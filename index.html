@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Automation — Kurt Wirth</title>
+<style>
+  :root { --ink:#22242a; --muted:#5d6370; --rule:#e3e5ea; --bg:#ffffff; --accent:#e91d63; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink:#e8e9ec; --muted:#9aa0ac; --rule:#32353d; --bg:#16171b; }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); margin:0; padding:0 16px;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3.5rem 0 5rem; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.01em; }
+  h2 { font-size: 1.1rem; margin: 2.4rem 0 .6rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  .app { border-top: 1px solid var(--rule); padding-top: 1.2rem; margin-top: 1.8rem; }
+  .app h3 { margin: 0 0 .3rem; font-size: 1.02rem; }
+  .app code { font-size: .86rem; color: var(--muted); }
+  p { margin: .7rem 0; }
+  a { color: var(--accent); }
+  footer { border-top:1px solid var(--rule); margin-top:3rem; padding-top:1.2rem;
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Personal Automation</h1>
+  <p class="sub">Two small private applications operated by Kurt Wirth.</p>
+
+  <p>The applications described on this page are personal tools. They are run by
+  one person, on that person's own computers, against that person's own Google
+  account. They are not offered as a product or service, have no users other
+  than their operator, and collect no data from anyone else.</p>
+
+  <div class="app">
+    <h3>Course Planner</h3>
+    <code>school-agent-506520</code>
+    <p>Prepares weekly teaching materials — lesson plans, slide decks, and
+    reading notes — for university communication courses. It reads the
+    operator's own syllabi and course notes from Google Drive and writes new
+    documents and presentations back to the same Drive.</p>
+  </div>
+
+  <div class="app">
+    <h3>Trivia Night Automation</h3>
+    <code>trivia-night-automation</code>
+    <p>Builds and formats question decks for a weekly pub trivia night, and
+    sends and reads scheduling email on the operator's behalf.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">privacy policy</a> for what these
+  applications access and how that information is handled.</p>
+
+  <footer>
+    Maintained by Kurt Wirth. Source and contact:
+    <a href="https://github.com/kurtawirth/personal-automation">github.com/kurtawirth/personal-automation</a>
+  </footer>
+</main>
+</body>
+</html>
